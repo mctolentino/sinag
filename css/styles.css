@@ -1,0 +1,130 @@
+.main-nav {
+    /*background:#6595c1;*/
+    background: url(../images/main-nav-bg.png);
+    font-family: georgia, serif;
+    font-weight: bold;
+    height: 69px;
+}
+
+/*.main-nav:after {*/
+    /*background:#e02a2d;*/
+    /*display:block;*/
+    /*height:15px;*/
+/*}*/
+
+
+ul.nav a:hover {
+    color: #000000 !important;
+    background: url(../images/tab-selected.png);
+    padding-left: 0px !important;
+    padding-top: 20px !important;
+    border: none;
+}
+
+.container {
+    max-width: none !important;
+    width: 1000px;
+}
+
+
+.main-nav>li>a {
+    position: relative;
+    padding: 36px 0px 13px 0px;
+}
+
+
+a {
+    color: #505050;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+ol, ul {
+    list-style: none;
+}
+
+.banner {
+    height: 280px;
+    background-color: #f9ce2a;
+    text-indent: -9999px;
+}
+
+.banner h1 {
+    height: 280px;
+    background: url(../images/sinag-logo.png) no-repeat;
+    background-position: center;
+    margin: 0em;
+}
+
+.drop-shadow {
+    -webkit-box-shadow: -2px 10px 10px 5px #dfdfdf;
+    -moz-box-shadow: -2px 10px 10px 5px #dfdfdf;
+    box-shadow: -2px 10px 10px 5px #dfdfdf;
+}
+
+.vertical-line {
+    border-right: 1px solid #7b796b;
+    margin-top: 1em;
+}
+
+#main {
+    height: 300px;
+    color: #eeeeee;
+    background-color: #efefef;
+}
+
+#footer {
+    color: #7b796b;
+    background-color: #f9ce2a;
+    padding-bottom: 1em;
+}
+
+#footer>a{
+    color: #7b796b;
+}
+
+#footer>div{
+    height: 150px;
+}
+
+.nav-tabs.nav-justified>li>a {
+    border-bottom: 0px solid #ddd;
+    border-radius: 4px 4px 0 0;
+}
+
+#be-a-student {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#secondary-menu a {
+    font-weight: bold;
+    text-align: left;
+    font-size: 17px;
+    margin: .9em;
+    padding-bottom: 1em;
+    margin-left: 4em;
+    color: #7b796b;
+}
+
+#contact-us {
+    padding-top: 3em;
+    padding-left: 1.5em;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#contact-us a {
+    font-size: 15px;
+    color: #7b796b;
+}
+
+.vcenter {
+    display: inline !important;
+    vertical-align: middle;
+}
+

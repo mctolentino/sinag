@@ -1,3 +1,52 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
 body {
     text-align: center;
     font-family: helvetica, arial, sans-serif;
@@ -20,44 +69,55 @@ a.seleted {
     font-weight: bold;
 }
 
-#container {
+.container {
     margin: auto;
     width: 1000px;
 }
 
 #nav {
-    background: url(../images/main-nav-bg.png);
+    background:#6595c1;
+
     margin: 0px;
     font-family: georgia, serif;
+    padding-top: 35px;
+}
+
+#nav:after{ 
+    background:#e02a2d;
+    display:block;
+    content:' ';
+    height:15px;
+    width:100%;
 }
 
 #nav li {
-    background: url(../images/main-nav-bg.png);
     margin: 0px;
     font-family: georgia, serif;
     font-weight: bold;
-    line-height: 69px;
+    display: inline;
+    padding:25px;
+}
+
+#nav a {
+    margin: 0px;
+    font-family: georgia, serif;
+    font-weight: bold;
+    display: inline;
+    color: #0e0e0e;
+    padding: 0 1em;
 }
 
 #header {
     
 }
 
-#nav li {
-    display: inline;
-    padding: 25px;
-}
 
-#nav li a {
-    color: #0e0e0e;
-    padding: 0 1em;
-}
 
 #banner {
     height: 280px;
     background-color: #f9ce2a;
-    width: 1000px;
     text-indent: -9999px;
+    width: 100%;
 }
 
 #banner h1 {
@@ -126,9 +186,9 @@ a.seleted {
 }
 
 .drop-shadow {
-    -webkit-box-shadow: -2px 2px 10px 5px #dfdfdf;
-    -moz-box-shadow: -2px 2px 10px 5px #dfdfdf;
-    box-shadow: -2px 2px 10px 5px #dfdfdf;
+    -webkit-box-shadow: -2px 10px 10px 5px #dfdfdf;
+    -moz-box-shadow: -2px 10px 10px 5px #dfdfdf;
+    box-shadow: -2px 10px 10px 5px #dfdfdf;
 }
 
 .vertical-line {
