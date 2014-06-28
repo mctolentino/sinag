@@ -1,16 +1,11 @@
 .main-nav {
-    /*background:#6595c1;*/
+    /* background: #6595c1; */
     background: url(../images/main-nav-bg.png);
-    font-family: georgia, serif;
+    font-family: monospace;
     font-weight: bold;
+    font-size: large;
     height: 69px;
 }
-
-/*.main-nav:after {*/
-    /*background:#e02a2d;*/
-    /*display:block;*/
-    /*height:15px;*/
-/*}*/
 
 
 ul.nav a:hover {
@@ -48,9 +43,11 @@ ol, ul {
 }
 
 .banner {
+    position: relative;
     height: 280px;
     background-color: #f9ce2a;
     text-indent: -9999px;
+    z-index: 100;
 }
 
 .banner h1 {
@@ -64,6 +61,7 @@ ol, ul {
     -webkit-box-shadow: -2px 10px 10px 5px #dfdfdf;
     -moz-box-shadow: -2px 10px 10px 5px #dfdfdf;
     box-shadow: -2px 10px 10px 5px #dfdfdf;
+    z-index: 10;
 }
 
 .vertical-line {
@@ -72,9 +70,9 @@ ol, ul {
 }
 
 #main {
-    height: 300px;
-    color: #eeeeee;
-    background-color: #efefef;
+    background: #ffffff;
+    z-index: -100;
+    height: 700px;
 }
 
 #footer {
@@ -128,3 +126,51 @@ ol, ul {
     vertical-align: middle;
 }
 
+
+#our-story {
+    background: url(../images/story-tab.png) no-repeat;
+    /* position: absolute; */
+    /* top: -100px; */
+    background-position: 0px -73px;
+    left: 670px;
+    height: 60px;
+    z-index: 10;
+    margin: 0;
+    padding: 0;
+    text-align: -webkit-center;
+    vertical-align: text-bottom;
+}
+
+#our-story>span {
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+    position: absolute;
+    font-size: 18px;
+    font-family: monospace;
+    /* padding: 30px 0px 0px 0px; */
+    margin: 30px 0px 0px -100px;
+}
+
+
+#bulb-halo {
+    background: url(../images/lightbulb-halo.png);
+    height: 819px;
+    width: 625px;
+    position: absolute;
+    left: 650px;
+    top: 144px;
+    z-index: 5;
+}
+
+#bulb {
+    position: absolute;
+    width: 135px;
+    top: -30px;
+    left: -37px;
+    z-index: 11;
+}
+
+#fund-dreams {
+    z-index: 7;
+}
