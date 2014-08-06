@@ -23,7 +23,7 @@
                 <li><a href="#"> WHAT WE DO </a></li>
                 <li><a href="#"> WHO WE ARE </a></li>
                 <li><a href="#"> HOW YOU CAN HELP </a></li>
-                <li><a href="#"> FUND </a></li>
+                <li><a id="donate-popup" href="#"> FUND </a></li>
             </ul>
         </div>
 
@@ -56,16 +56,8 @@
                 <img id="bulb" src="images/lightbulb.png" />
             </div>
 
-
-            
-
-
-
-
-
         </div>
-
-
+            
         <div id="footer" class="row drop-shadow">
 
             <div id="secondary-menu" class="col-xs-4 vertical-line">
@@ -95,6 +87,17 @@
 
 
     </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var img = '<img src="https://si0.twimg.com/a/1339639284/images/three_circles/twitter-bird-white-on-blue.png" />';
+            $("#donate-popup").popover({
+                placement : 'bottom',
+                html: 'true', 
+                content: '<img src="https://si0.twimg.com/a/1339639284/images/three_circles/twitter-bird-white-on-blue.png" />',
+                trigger: 'hover'
+            });
+        });
+    </script>
     </body>
 
 </html>
