@@ -8,12 +8,12 @@
 }
 
 
-ul.nav a:hover {
-    color: #000000 !important;
-    background: url(../images/tab-selected.png);
+.main-nav>li>a:hover {
+    color: white;
+    background: transparent;
     padding-left: 0px !important;
     padding-top: 20px !important;
-    border: none;
+    border: 0px;
 }
 
 .container {
@@ -173,4 +173,9 @@ ol, ul {
 
 #fund-dreams {
     z-index: 7;
+}
+
+#fund-dreams>a {
+    color: #6595c1;
+    font-style: italic;
 }
