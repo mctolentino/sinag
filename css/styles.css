@@ -179,3 +179,12 @@ ol, ul {
     color: #6595c1;
     font-style: italic;
 }
+
+.popover, .popover h3.title, .popover .content { font-size: 14px; }
+
+.popover-content {
+    color: red;
+    font-size: 10px;
+    margin: 0px;
+    padding: 0px;
+}

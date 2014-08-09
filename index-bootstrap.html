@@ -23,7 +23,9 @@
                 <li><a href="#"> WHAT WE DO </a></li>
                 <li><a href="#"> WHO WE ARE </a></li>
                 <li><a href="#"> HOW YOU CAN HELP </a></li>
-                <li><a id="donate-popup" href="#"> FUND </a></li>
+                <li>
+                    <a id="donate-popup" href="#"> FUND </a>
+                </li>
             </ul>
         </div>
 
@@ -89,11 +91,11 @@
     </div>
     <script type="text/javascript">
         $(document).ready(function() {
-            var img = '<img src="https://si0.twimg.com/a/1339639284/images/three_circles/twitter-bird-white-on-blue.png" />';
+            var img = '<img src="images/fund/test-hover.png" width="270px"/>';
             $("#donate-popup").popover({
                 placement : 'bottom',
                 html: 'true', 
-                content: '<img src="https://si0.twimg.com/a/1339639284/images/three_circles/twitter-bird-white-on-blue.png" />',
+                content: img,
                 trigger: 'hover'
             });
         });
