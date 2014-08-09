@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+        <div class="row drop-shadow">
+            <ul class="nav nav-tabs main-nav nav-justified">
+                <li><a href="#"> HOME </a></li> 
+                <li><a href="#"> WHAT WE DO </a></li>
+                <li><a href="#"> WHO WE ARE </a></li>
+                <li><a href="#"> HOW YOU CAN HELP </a></li>
+                <li>
+                    <a id="donate-popup" href="#"> FUND </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="row banner drop-shadow">
+            <div class="col-lg-12">
+
+                <h1>sinag</h1>
+
+            </div>
+        </div>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var img = '<img src="images/fund/test-hover.png" width="270px"/>';
+            $("#donate-popup").popover({
+                placement : 'bottom',
+                html: 'true', 
+                content: img,
+                trigger: 'hover'
+            });
+            // $("#donate-popup").popover('show');
+        });
+    </script>
+    </body>
+
+</html>
+

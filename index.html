@@ -1,61 +1,71 @@
-<!doctype html>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
-    <title>Sinag: Fund a Dream Today</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sinag Template</title>
+
+    <!-- CSS Styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap main JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(function(){
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
 </head>
 
-<body>
-<div id="container">
+    <div id="main-container" class="container">
 
-    <div id="header" class="drop-shadow">
-        <ul id="nav">
-            <li><a href="#"> WHAT WE DO </a></li>
-            <li><a href="#"> WHO WE ARE </a></li>
-            <li><a href="#"> HOW YOU CAN HELP </a></li>
-            <li><a href="#"> FUND </a></li>
-        </ul>
-        <!-- end of nav -->
+        <div id="header"></div>
 
+        <div id="main" class="row">
+            <div class="col-xs-offset-8"></div>
+            <div id="our-story" class="col-xs-4">
+                <span>STORY</span>
+            </div>
 
-        <div id="banner">
-            <h1>Sinag Logo</h1>
-        </div>
-        <!-- end of banner -->
-    </div>
+            <!-- funding dreams / light bulb -->
+            <div id="fund-dreams" class="col-xs-10">
+               <h2>FUNDING DREAMS.</h2>
+                <p>
+                    Sinag.org believes that education is the one true source of a better life. As the saying goes, "Time is gold".
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+                <a href="#">read more about our mission</a>
 
-    <div id="main">
-        main content / about us
-    </div>
-    <!-- end of main -->
-
-    <div id="footer" class="drop-shadow">
-        <div id="secondary-menu" class="vertical-line">
-            <ul>
-                <li><a href="#"> Sinag blog </a></li>
-                <li><a href="#"> Videos </a></li>
-                <li><a href="#"> Press </a></li>
-            </ul>
+            </div>
+            <div class="col-xs-1" id="bulb-halo"></div>
+            <div class="col-xs-1">
+                <img id="bulb" src="images/lightbulb.png" />
+            </div>
 
         </div>
-        <div id="be-a-student" class="vertical-line">
-            <p><img src="images/gradhat.png" alt="graduation hat"/> <br />
-                Be a Sinag Student</p>
+            
+        <div id="footer" class="row drop-shadow"></div>
 
-        </div>
-        <div id="contact-us">
-            <p> Call Us <br/>
-                632-99999999 </p>
-
-            <p> Questions and Inquiries <br/>
-                <a href="#">info@sinag.org</a></p>
-        </div>
 
     </div>
-    <!-- end of footer -->
-</div>
-</body>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var img = '<img src="images/fund/test-hover.png" width="270px"/>';
+            $("#donate-popup").popover({
+                placement : 'bottom',
+                html: 'true', 
+                content: img,
+                trigger: 'hover'
+            });
+            $("#donate-popup").popover('show');
+        });
+    </script>
+    </body>
 
 </html>
+

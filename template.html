@@ -14,28 +14,17 @@
 
     <!-- Bootstrap main JS -->
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(function(){
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+</head>
 
     <div id="main-container" class="container">
 
-        <div class="row drop-shadow">
-            <ul class="nav nav-tabs main-nav nav-justified">
-                <li><a href="#"> HOME </a></li> 
-                <li><a href="#"> WHAT WE DO </a></li>
-                <li><a href="#"> WHO WE ARE </a></li>
-                <li><a href="#"> HOW YOU CAN HELP </a></li>
-                <li>
-                    <a id="donate-popup" href="#"> FUND </a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="row banner drop-shadow">
-            <div class="col-lg-12">
-
-                <h1>sinag</h1>
-
-            </div>
-        </div>
+        <div id="header"></div>
 
         <div id="main" class="row">
             <div class="col-xs-offset-8"></div>
@@ -60,32 +49,7 @@
 
         </div>
             
-        <div id="footer" class="row drop-shadow">
-
-            <div id="secondary-menu" class="col-xs-4 vertical-line">
-                <ul class="vcenter">
-                    <li><a href="#"> Sinag blog </a></li>
-                    <li><a href="#"> Videos </a></li>
-                    <li><a href="#"> Press </a></li>
-                </ul>
-            </div>
-
-            <div id="be-a-student" class="col-xs-4 vertical-line">
-                <p class="text-center">
-                    <img src="images/gradhat.png" alt="graduation hat"/> <br/>
-                    Be a Sinag Student
-                </p>
-
-            </div>
-
-            <div id="contact-us" class="col-xs-4">
-                <p> Call Us <br/>
-                    632-99999999 </p>
-
-                <p> Questions and Inquiries <br/>
-                    <a href="#">info@sinag.org</a></p>
-            </div>
-        </div>
+        <div id="footer" class="row drop-shadow"></div>
 
 
     </div>
@@ -98,6 +62,7 @@
                 content: img,
                 trigger: 'hover'
             });
+            $("#donate-popup").popover('show');
         });
     </script>
     </body>
